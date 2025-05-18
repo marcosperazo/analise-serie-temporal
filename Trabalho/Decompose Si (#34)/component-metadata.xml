@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2025-05-17T17:09:24.383-03:00</last-modified>
+    <description>Decomposes selected Time-Series or IoT signal into Trend, 2 Seasonal Components, and the remaining Residual.
+
+Signal = T + S1 + S2 + R
+
+[T] Trend Component: is calculated by fitting a regression model through the data with degree 2.
+[S1] Seasonal Component 1: is calculated as the first major spike in auto-correlation.
+[S2] Seasonal Component 2: is calculated as the first major spike in auto-correlation after the diferencing of the first seasonality.
+[R] Residual: is what remains after trend and the two Seasonalities have been differenced.
+
+The interactive displays shows the first 1000 records fpr the above outputs as well as the ACF plot for the detrended signal and both subsequent series after seasonality one and two are removed.
+
+If you encoutner errors please verify that 
+Preferances > KNIME > Python (labs) > Python environment configuration
+is set to bundled</description>
+    <component-type>Sink</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVR4nGNgoBUwMDBwMDIyakDGIDFiNAqAFJuYmGAoBoonAPEEoBoFilwHNLyeaEMMIEABTUzA2Nh4PooA0Gn12JwN8jc2cZAYWBxoUgBQcwGQnoBiKgEDYGEFF4CGsgIooIgxAKYHOweLTegGE20AkkEGQC+uRzNgApwDDxQiAchFGOpRTMTvGlA0YqqFBmIBIc2wAMelQAFo+n5s6R4kBrKZqFQITR8omYmUMCIaAAD0RELelYkiBgAAAABJRU5ErkJggg==</icon>
+    <in-ports>
+        <port name="Signal Data">Table containing signal column</port>
+    </in-ports>
+    <out-ports>
+        <port name="Table with Decomposed Signal">Original table with Trend, Seasonality 1, Seasonality 2, and Residual columns added.</port>
+        <port name="Trend Model">The Regression model representing the Singal's Trend</port>
+    </out-ports>
+</component-metadata>
