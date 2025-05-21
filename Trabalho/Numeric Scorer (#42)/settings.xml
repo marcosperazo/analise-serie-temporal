@@ -1,7 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_R^2"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_adjusted R^2"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean absolute error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean squared error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_4">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_root mean squared error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_5">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean signed difference"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_6">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean absolute percentage error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_7">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_R^2"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="-2.0184133635373086E7"/>
+        </config>
+        <config key="Variable_8">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_adjusted R^2"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="-2.0184133635373086E7"/>
+        </config>
+        <config key="Variable_9">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean absolute error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="579115.7076108765"/>
+        </config>
+        <config key="Variable_10">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean squared error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="5.240352891046353E11"/>
+        </config>
+        <config key="Variable_11">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_root mean squared error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="723902.81744488"/>
+        </config>
+        <config key="Variable_12">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean signed difference"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="913.8530641819204"/>
+        </config>
+        <config key="Variable_13">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="score_mean absolute percentage error"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="3027.486002135983"/>
+        </config>
+    </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
@@ -20,7 +105,7 @@
         </config>
         <config key="predicted">
             <entry key="useRowID" type="xboolean" value="false"/>
-            <entry key="columnName" type="xstring" value="Signal"/>
+            <entry key="columnName" type="xstring" value="Sum(money) (fitted values)"/>
         </config>
         <config key="override default output name_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
@@ -31,17 +116,17 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="false"/>
         </config>
-        <entry key="output column" type="xstring" value="Signal"/>
+        <entry key="output column" type="xstring" value="Sum(money) (fitted values)"/>
         <config key="name prefix for flowvars_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-            <entry key="EnabledStatus" type="xboolean" value="false"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="name prefix for flowvars" type="xstring" value=""/>
+        <entry key="name prefix for flowvars" type="xstring" value="score_"/>
         <config key="generate flow variables_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="generate flow variables" type="xboolean" value="false"/>
+        <entry key="generate flow variables" type="xboolean" value="true"/>
         <config key="number_of_predictors_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -55,11 +140,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-bundle-version" type="xstring" value="5.4.4.v202504301443"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410301420"/>
+    <entry key="node-feature-version" type="xstring" value="5.4.4.v202504301443"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Numeric Scorer"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -75,6 +160,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="e2fc3acb-d7b0-4f41-99c1-8c054ee2397c"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

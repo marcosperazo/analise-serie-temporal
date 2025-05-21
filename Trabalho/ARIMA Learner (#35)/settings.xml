@@ -10,7 +10,7 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="time.series.column" type="xstring" value="Signal"/>
+        <entry key="time.series.column" type="xstring" value="Sum(money)"/>
         <config key="p.order_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -37,6 +37,23 @@
         </config>
         <entry key="estimation.method" type="xstring" value="Conditional Likelihood"/>
     </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="p.order">
+                <entry key="used_variable" type="xstring" value="AR"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="i.order">
+                <entry key="used_variable" type="xstring" value="I"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="q.order">
+                <entry key="used_variable" type="xstring" value="MA"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.arima.node.learner.ARIMALearnerNodeFactory"/>
@@ -44,11 +61,11 @@
     <entry key="node-bundle-name" type="xstring" value="ARIMA Plug-in"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.arima"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.3.0.v202312081535"/>
+    <entry key="node-bundle-version" type="xstring" value="5.4.0.v202407231410"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Autoregressive integrated moving average (ARIMA)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.arima.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.3.0.v202312081535"/>
+    <entry key="node-feature-version" type="xstring" value="5.4.0.v202407231410"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="ARIMA Learner"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -58,7 +75,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.arima.ARIMAPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="ARIMA(2,0,1) model. Loglikelihood: -1.892,1224%%00010 %%00009Conditional Likelihood"/>
+            <entry key="port_object_summary" type="xstring" value="ARIMA(10,10,10) model. Loglikelihood: -2.427.546,9628%%00010 %%00009Conditional Likelihood"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -66,6 +83,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="f4f23a01-c91c-4698-b158-56f057991732"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

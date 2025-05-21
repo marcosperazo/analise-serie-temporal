@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2025-05-19T01:16:26.860-03:00</last-modified>
+    <description>Removes seasonality trend in input data.
+
+Required extensions: 
+KNIME Quick Forms 
+(https://hub.knime.com/knime/extensions/org.knime.features.js.quickforms/latest)
+KNIME Math Expression (JEP)
+(https://hub.knime.com/knime/extensions/org.knime.features.ext.jep/latest)</description>
+    <in-ports>
+        <port name="Input Table">Data containing selected column for seasonality removal.</port>
+    </in-ports>
+    <out-ports>
+        <port name="Input data with removed seasonality">Extra column added to original table with value x(t) - x(t-lag) where lag is the value given by user in the configuration dialog.</port>
+        <port name="The seasonality column">This table contains the removed seasonality column. This information would be needed to re-add the seasonality back into the data later.</port>
+    </out-ports>
+</component-metadata>

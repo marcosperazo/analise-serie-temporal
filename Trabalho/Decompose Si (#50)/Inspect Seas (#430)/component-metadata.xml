@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2025-05-19T01:16:26.722-03:00</last-modified>
+    <description>This component calculates autocorrelation with Pearson Correlation for lagged copies of time series. Additionally, it produces an interactive view that displays the Autocorrelation Function (ACF) Plot, Partial Autocorrelation Function (PACF) Plot, and detects the first local maximum of correlation for sign of dominant seasonality.
+
+Required extensions: 
+KNIME Python Integration
+(https://hub.knime.com/knime/extensions/org.knime.features.python2/latest)
+KNIME Quick Forms 
+(https://hub.knime.com/knime/extensions/org.knime.features.js.quickforms/latest)
+KNIME JavaScript Views
+(https://hub.knime.com/knime/extensions/org.knime.features.js.views/latest)
+KNIME Math Expression (JEP)
+(https://hub.knime.com/knime/extensions/org.knime.features.ext.jep/latest)
+
+</description>
+    <component-type>Sink</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADtUlEQVR4nO1bi3GDMAz1CBmBERiBETKCR+gIjJARPEJGYARG8AhskOJEokLYYIM/JE3vdNfjY0lPz0/GEPF4PEQuG//q0Rqw62gtMTxeZY3pC0C6ZC+jydHUaP1oj0DrKDBvAwBU9u5ISkNiHUnQ2I0ccwEywHVRGRIraQmmWdA9BG2qeAkYryLsGcA4O6Kw4mjijYXeaSplZ5YKATYaADC/byzpAeh8KCBPdijm+5oNAPFS8p5XIXXiHuzbFcee5AeCfJMzaUdMLdOcPkhvAhxJ5ihrxTdiuzKh9I4vxEE04UkEArJzCAEhZOBn8qUT9Yi1DgHhC8DGgEZVNQ5WOsFAILyKtjUQLjz0Gef9RuxUt5zrhLWb6QB1oiDxGSDV+NgiB1cBbTddmJq2CavUgY8moQ9cLClfAOjCQqcKLCMADcln4cdV/c258y4AgB8Ffu5bAGD1+xyqnxGAihS1WgMAW5409ikAgC/saDcrAGSuDKmDKQTA1ZYfvQCf79UnAgD+Bu7vCwA5ifM/qfIXBgC7QTsDgKpkruQLASDBX8cBaPiJDwVgUWg8gf3/liOQUgCAz2k98DQ4iALY/gMAJp9PYwezCeBZAcgWSEEAJrY/7SQAZNMeonenAACDwV2n5FPwVACAbynmL1VNLEl2iFiur10vOKhKdAES1AUqQvciTEzR9yFdIvjvAWhLAkCCq8T8FbgB5MdYRB843V7vEOCgxPlXEgASpKkO/+5AH9UoYJp1KVwj4qWTZwFLsfxCxFC4OgCs+Wfa7qMn0UkyBT5QNdQIyojgliksex70JM69aPMtARioEXrn/T0Hj9PtsXfw3KzYCR6yZ7qfUw0vaI4KztmM0H/2boBfpEgPVqWDjskYonEz7eAX1mIuNFXp4CMBgAKqF+csF3cEgMWrpHczVn35BcADAKqWRZ4QIwOAumZ91+m66UZUU+9pO2cwsvJzFnKNNvT7oLebCoz6zh2nrUFoV2hLJxWYPK76Vr8U8xlMEhBk6eQ8AcBlvWHA6rON74DqHUDABRyJdfPBLnTwU04HRvmgQu1BeFojnKE7gE6hWOPegfej8h6HVBN0yXWCWG6r1z60PwSABXVkg7EqU+LS4n8XG48EwX82g6ZSscKS+KGfy3wBOAIACaoS9t/8aZiju/cYxevtDba2gSXexhDh2BWqWaegAXfC/lNZtCscN/fzlsZBjdZ9otMUgLgAXe+scqGmxd+DWZMk1hSDOpghSYUVmTbUKDuyrDGyAHBm+wXghCL+1Z0j3wAAAABJRU5ErkJggg==</icon>
+    <in-ports>
+        <port name="Input Table">Data containing selected column for the Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) analysis.</port>
+    </in-ports>
+    <out-ports>
+        <port name="Data Table of detected local maximum">This table contains a list of detected local maximum, their corresponding correlation, and lag value.</port>
+        <port name="Flow Variable containing seasonality lag">This flow variable contains the lag value where the dominant seasonality might occur.</port>
+    </out-ports>
+</component-metadata>

@@ -85,11 +85,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Views"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.views"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-bundle-version" type="xstring" value="5.4.4.v202504301443"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Views"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.views.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-feature-version" type="xstring" value="5.4.4.v202504301443"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Input Table"/>
@@ -111,6 +111,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="b567460a-c5e1-4be2-8b2e-19b79b028dc5"/>
+        <entry key="file_store_id" type="xstring" value="66b470e6-d763-418b-b196-548feffd8e5e"/>
     </config>
 </config>

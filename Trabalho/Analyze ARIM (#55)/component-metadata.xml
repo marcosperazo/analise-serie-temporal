@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2025-05-19T01:43:43.754-03:00</last-modified>
+    <description>This component analyzes the residuals of an ARIMA (AutoRegressive Integrated Moving Average) model by 
+1. visualizing auto correlation of the residuals
+2. performing Ljung-Box test of autocorrelation at lags 1-10
+3. visualizing residuals in a line plot
+4. calculating the four first central moments of the residuals
+5. performing Jarque-Bera test of normality
+
+If you encoutner errors please verify that 
+Preferances > KNIME > Python (labs) > Python environment configuration
+is set to bundled</description>
+    <component-type>Sink</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVR4nGNgoBUwMDBwMDIyakDGIDFiNAqAFJuYmGAoBoonAPEEoBoFilwHNLyeaEMMIEABTUzA2Nh4PooA0Gn12JwN8jc2cZAYWBxoUgBQcwGQnoBiKgEDYGEFF4CGsgIooIgxAKYHOweLTegGE20AkkEGQC+uRzNgApwDDxQiAchFGOpRTMTvGlA0YqqFBmIBIc2wAMelQAFo+n5s6R4kBrKZqFQITR8omYmUMCIaAAD0RELelYkiBgAAAABJRU5ErkJggg==</icon>
+    <in-ports>
+        <port name="ARIMA Model">ARIMA model</port>
+    </in-ports>
+    <out-ports/>
+</component-metadata>
